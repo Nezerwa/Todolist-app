@@ -80,7 +80,7 @@ npm start
 
 ## Author <a name="author"></a>
 
-👤 **James Serengia**
+👤 **Nezerwa Eligrand**
 
 - GitHub: [@githubhandle](https://github.com/Nezerwa)
 - Twitter: [@twitterhandle](https://twitter.com/Nezerwa)
