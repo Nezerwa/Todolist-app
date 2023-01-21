@@ -5,15 +5,19 @@ export let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 export default function deleteTask() {
   const deleteBtn = document.querySelectorAll('.option');
   deleteBtn.forEach((btn) => {
-    const container = document.querySelector('.container');
     btn.addEventListener('click', (e) => {
+      const deletedTaskIndex = e.target.dataset.index;
       const item = e.target.parentNode.parentNode;
-      container.removeChild(item);
-      const deletedTask = e.target.previousElementSibling.textContent;
-      tasks = tasks.filter((task) => task.description !== deletedTask);
-      localStorage.setItem('tasks', JSON.stringify(tasks));
+      item.remove();
+      tasks.splice(deletedTaskIndex, 1);
+
+      // update index of remaining tasks
+      tasks.forEach((task, i) => {
+        task.index = i + 1;
+      });
     });
   });
+  localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
 export function clearfield() {
