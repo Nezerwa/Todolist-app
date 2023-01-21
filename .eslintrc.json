@@ -17,8 +17,7 @@
     "import/extensions": [ 1, {
       "js": "always", "json": "always"
     }],
-    "linebreak-style" :"off",
-    "no-new" :"off"
+    "linebreak-style": "off"
   },
   "ignorePatterns": [
     "dist/",

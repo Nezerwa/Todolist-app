@@ -1,4 +1,7 @@
-export const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+/* eslint-disable import/no-mutable-exports */
+
+export let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+
 export default function deleteTask() {
   const deleteBtn = document.querySelectorAll('.option');
   deleteBtn.forEach((btn) => {
@@ -7,8 +10,8 @@ export default function deleteTask() {
       const item = e.target.parentNode.parentNode;
       container.removeChild(item);
       const deletedTask = e.target.previousElementSibling.textContent;
-      const taskArray = tasks.filter((task) => task.description !== deletedTask);
-      localStorage.setItem('tasks', JSON.stringify(taskArray));
+      tasks = tasks.filter((task) => task.description !== deletedTask);
+      localStorage.setItem('tasks', JSON.stringify(tasks));
     });
   });
 }
@@ -56,8 +59,8 @@ checkTasks();
 export function clearAll() {
   const clear = document.querySelector('.clear');
   clear.addEventListener('click', () => {
-    const remainingTasks = tasks.filter((task) => task.completed !== true);
-    localStorage.setItem('tasks', JSON.stringify(remainingTasks));
+    tasks = tasks.filter((task) => task.completed !== true);
+    localStorage.setItem('tasks', JSON.stringify(tasks));
     window.location.reload(true);
   });
 }

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import './style.css';
-// eslint-disable-next-line no-unused-vars
-import Task from './modules/add.js';
+// eslint-disable-next-line quotes
+import Task from "./modules/add.js";
