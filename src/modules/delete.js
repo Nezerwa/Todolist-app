@@ -1,5 +1,3 @@
-/* eslint-disable import/no-mutable-exports */
-
 export let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
 export default function deleteTask() {
@@ -11,6 +9,9 @@ export default function deleteTask() {
       container.removeChild(item);
       const deletedTask = e.target.previousElementSibling.textContent;
       tasks = tasks.filter((task) => task.description !== deletedTask);
+      tasks.forEach((task, i) => {
+        task.index = i;
+      });
       localStorage.setItem('tasks', JSON.stringify(tasks));
     });
   });
