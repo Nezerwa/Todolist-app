@@ -13,7 +13,6 @@ export default function checkTasks() {
             tasks[i].completed = true;
 
             localStorage.setItem('tasks', JSON.stringify(tasks));
-            console.log(tasks);
           }
         }
       }
@@ -24,7 +23,6 @@ export default function checkTasks() {
         if (tasks[i].description === taskchecked.textContent) {
           tasks[i].completed = false;
           localStorage.setItem('tasks', JSON.stringify(tasks));
-          console.log(tasks);
         }
       }
     });
@@ -37,7 +35,6 @@ function clearAll() {
   const clear = document.querySelector('.clear');
   clear.addEventListener('click', () => {
     tasks = tasks.filter((task) => task.completed !== true);
-    console.log(tasks);
   });
 }
 

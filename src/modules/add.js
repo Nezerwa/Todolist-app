@@ -27,7 +27,7 @@ export const populate = (task) => {
   const box = document.createElement('input');
   box.setAttribute('type', 'checkbox');
   box.classList.add('checkbox');
-  box.setAttribute(`${task.completed ?'checked':'ffff'}`, true)
+  box.setAttribute(`${task.completed ? 'checked' : 'ffff'}`, true);
   const title = document.createElement('span');
   title.classList.add('title');
   title.innerHTML = task.description;
