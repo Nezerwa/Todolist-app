@@ -1,7 +1,4 @@
-/* eslint-disable import/no-mutable-exports */
-
 export let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
-
 export default function deleteTask() {
   const deleteBtn = document.querySelectorAll('.option');
   deleteBtn.forEach((btn) => {
@@ -57,7 +54,7 @@ checkTasks();
 /* User can Delete the checked task */
 
 export function clearAll() {
-  const clear = document.querySelector('.clear');
+  const clear = document.querySelector(".clear");
   clear.addEventListener('click', () => {
     tasks = tasks.filter((task) => task.completed !== true);
     localStorage.setItem('tasks', JSON.stringify(tasks));
