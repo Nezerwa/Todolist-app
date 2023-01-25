@@ -1,151 +1,117 @@
-<a name="readme-top"></a>
+<!-- <a name="readme-top"></a> -->
 
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
-- [📗 Table of Contents](#-table-of-contents)
-- [📖 To Do List ](#-to-do-list-)
-  - [🛠 Built With ](#-built-with-)
-    - [Key Features ](#key-features-)
-  - [🚀 Live Demo ](#-live-demo-)
-  - [💻 Getting Started ](#-getting-started-)
-    - [Prerequisites](#prerequisites)
-    - [Setup](#setup)
-  - [👥 Authors ](#-authors-)
-  - [🔭 Future Features ](#-future-features-)
-  - [🤝 Contributing ](#-contributing-)
-  - [⭐️ Show your support ](#️-show-your-support-)
-  - [🙏 Acknowledgments ](#-acknowledgments-)
-  - [📝 License ](#-license-)
+- [📗 Table of Contents](#table-of-contents)
+- [Todo list App -- with Webpack ](#todo-list-app--with-webpack)
+  - [🛠 Built With ](#built-with)
+    - [Key Features ](#key-features)
+  - [🚀 Live Demo ](#live-demo)
+  - [Getting Started ](#getting-started)
+    - [Install ](#install)
+  - [Author ](#author)
+  - [🔭 Future Features ](#future-features)
+  - [🤝 Contributing ](#contributing)
+  - [Show your support ](#show-your-support)
+  - [Acknowledgments ](#acknowledgments)
+  - [📝 License ](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 To Do List <a name="about-project"></a>
+# Todo list App -- with Webpack <a name="todo-list-app--with-webpack"></a>
 
-> "To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.
+> Todo List App project build using webpack.
 
 ## 🛠 Built With <a name="built-with"></a>
 
-- JavaScript
-- HTML
-- CSS
+- Html
+- Css
+- Javascript
 - Webpack
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **Interactivity**
-- **Add and Remove Actions**
-- **Remove all completed tasks action**
+> Key features of the application.
+
+- **Adding a new item.**
+- **Removing a selected item.**
+- **Marking a selected item as complete.**
+- **Removing all items marked as complete at once.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- LIVE DEMO -->
+
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://tobuya.github.io/TODOLIST-APP/dist/)
+> You can see a live demo via the link bellow.
+
+- [Live Demo Link](https://Nezerwa.github.io/Todolist-app/dist)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
-## 💻 Getting Started <a name="getting-started"></a>
+## Getting Started <a name="getting-started"></a>
 
-- Create a local directory that you want to clone the repository.
+To get a local copy up and running follow these simple example steps.
 
-- Open the command prompt in the created directory.
+### Install <a name="install"></a>
 
-- On the terminal run this command git clone https://github.com/Nezerwa/TODOLIST-APP
+```js
+npm install
+```
 
-- Go to the repository folder using command prompt cd To-Do-List.
+To build a webpack bundle file,run
 
-- Install the dev dependencies for linters run npm install.
+```js
+npm run build
+```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+If you want to build and run the local server, run
 
-### Prerequisites
+```js
+npm start
+```
 
-In order to run this project you need:
-
-- Google chrome
-
-- Internet Explorer
-
-- Any browser
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-### Setup
-
-Clone this repository to your desired folder:
-
-- Open the command prompt in the created directory.
-
-- On the terminal run this command git clone https://github.com/tobuya/To-Do-List
-
-- Go to the repository folder using command prompt cd To-Do-List
-
-- Install the dev dependencies for linters run npm install.
---->
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- AUTHOR -->
-
-## 👥 Author <a name="author"></a>
+## Author <a name="author"></a>
 
 👤 **Nezerwa Eligrand**
 
 - GitHub: [@githubhandle](https://github.com/Nezerwa)
-- Twitter: [@twitterhandle](https://twitter.com/@Nezerwa)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/eligrand-nezerwa/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- Twitter: [@twitterhandle](https://twitter.com/Nezerwa)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/eligrand-nezerwa)
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Animations**
-- **Transitions**
-- **Popup**
+- [ ] **Reordering a selected item (as drag-and-drop)**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Nezerwa/TODOLIST-APP/issues/).
+Feel free to check the [issues page](../../issues/).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- SUPPORT -->
-
-## ⭐️ Show your support <a name="support"></a>
+## Show your support <a name="support"></a>
 
 Give a ⭐️ if you like this project!
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Acknowledgments <a name="acknowledgements"></a>
 
-<!-- ACKNOWLEDGEMENTS -->
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-I would like to thank Microverse.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<!-- LICENSE -->
+- Hat tip to anyone who inspired this project
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./MIT.md) licensed.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+
+<a name="readme-top"></a>
