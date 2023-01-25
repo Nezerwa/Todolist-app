@@ -1,1 +1,39 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>To Do list</title><script defer="defer" src="main.js"></script></head><body><main class="main"><section class="container"><div class="top"><span>Today's To Do</span> <i class="reset"></i></div><hr/><div class="input-text"><input class="task-to-add" placeholder="Add to your list..."/> <i class="add"></i></div></section><div class="foot"><a href="#" class="clear">Clear all completed</a></div></main></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <title>Webpack setup</title>
+<script defer src="main.js"></script></head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="todo-container">
+            <div class="item-wrapper">
+                <h1>Today's To Dos</h1>
+                <span class="icon-box"><i class="fa-solid fa-rotate icon-refresh-todos"></i></span>
+            </div>
+            <div class="item-wrapper">
+                <input type="text" placeholder="Add to your list..." aria-label="Add to do input"
+                    class="add-todo-input">
+                <span class="icon-box"><i class="fa-solid fa-arrow-turn-down icon-add-todo"></i></span>
+            </div>
+            <ul class="todo-list"></ul>
+            <div class="clear-all-complete">
+                <button class="clear-all-btn">Clear All complete</button>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
