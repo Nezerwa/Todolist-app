@@ -51,7 +51,7 @@
 
 > You can see a live demo via the link bellow.
 
-- [Live Demo Link](https://Nezerwa.github.io/TODOLIST-APP/dist)
+- [Live Demo Link](https://Nezerwa.github.io/Todolist-app/dist)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
