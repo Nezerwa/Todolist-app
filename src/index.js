@@ -1,3 +1,8 @@
-import './style.css';
-// eslint-disable-next-line no-unused-vars, quotes
-import Task from "./modules/add.js";
+import "./style.css";
+import todoActions from "./modules/todoActions.js";
+import Crud from "./modules/crud.js";
+
+todoActions();
+
+const todoClass = new Crud();
+todoClass.updateUI();
