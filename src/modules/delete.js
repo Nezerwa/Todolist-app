@@ -15,9 +15,9 @@ export default function deleteTask() {
       tasks.forEach((task, i) => {
         task.index = i + 1;
       });
+      localStorage.setItem('tasks', JSON.stringify(tasks));
     });
   });
-  localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
 export function clearfield() {
@@ -31,27 +31,9 @@ export function checkTasks() {
   const box = document.querySelectorAll('.checkbox');
   box.forEach((box) => {
     box.addEventListener('change', (e) => {
-      const taskchecked = e.target.nextElementSibling;
-      if (box.checked) {
-        taskchecked.style.textDecoration = 'line-through';
-        taskchecked.style.color = 'gray';
-        for (let i = 0; i < tasks.length; i += 1) {
-          if (tasks[i].description === taskchecked.textContent) {
-            tasks[i].completed = true;
-
-            localStorage.setItem('tasks', JSON.stringify(tasks));
-          }
-        }
-      } else {
-        taskchecked.style.color = 'black';
-        taskchecked.style.textDecoration = 'none';
-        for (let i = 0; i < tasks.length; i += 1) {
-          if (tasks[i].description === taskchecked.textContent) {
-            tasks[i].completed = false;
-            localStorage.setItem('tasks', JSON.stringify(tasks));
-          }
-        }
-      }
+      const taskIndex = e.target.parentNode.dataset.index;
+      tasks[taskIndex].completed = box.checked;
+      localStorage.setItem('tasks', JSON.stringify(tasks));
     });
   });
 }
@@ -63,9 +45,9 @@ checkTasks();
 export function clearAll() {
   const clear = document.querySelector('.clear');
   clear.addEventListener('click', () => {
-    tasks = tasks.filter((task) => task.completed !== true);
+    tasks = tasks.filter((task) => !task.completed);
     localStorage.setItem('tasks', JSON.stringify(tasks));
-    window.location.reload(true);
+    clearfield();
   });
 }
 
