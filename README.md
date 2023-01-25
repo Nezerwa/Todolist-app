@@ -41,6 +41,7 @@
 - **Removing a selected item.**
 - **Marking a selected item as complete.**
 - **Removing all items marked as complete at once.**
+-**Editing a task description**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
